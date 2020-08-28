@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #CAD2C5
+}
+
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #52796F;
+    margin-bottom: 10px;
+  }
+
+.nav li {
+    float: right;
+  }
+  
+.nav li:first-child {
+    float: left;
+  }
+  
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+title {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 80px;
+}
+
+h2 {
+    text-align: center;
+    padding: 40px;
+}
+
+p{
+    text-align: center;
+    padding: 4px;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #354F52;
+    color: #f6faf7;
+    text-align: center;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+}
+.redessociais {
+    margin-top: 15px;
+}
+.facebook {
+    width: 2%;
+    margin-top: 8px;
+    padding: 5px;
+}
+.insta {
+    width: 2%;
+    margin-top: 8px;
+    padding: 5px;
+}
+.twitter {
+    width: 2%;
+    margin-top: 8px;
+    padding: 5px;
+}
+
+.estq img{
+    width: 30%;
+}
+
+.estq td, th{
+    text-align: center;
+}
+
+.imgpg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.funcion li, ul{
+    text-align: center;
+    padding: 4px;
+}
+
+.formu{
+    text-align: center;
+    padding: 16px;
+    margin: 4px;
+}
+
+button {
+    background-color: #84A98C;
+    color: #000000;
+    width: 80px;
+    height: 40px;
+}
+
+.bt {
+    float: right;
+    margin-right: 20px;
+    width: 90px;
+    height: 50px;
+
+}
+
+.venda {
+    text-align: center;
+}
+
+.tx {
+    width: 500px;
+    height: 100px;
+}
