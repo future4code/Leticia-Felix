@@ -70,6 +70,9 @@ div img {
     width: auto;
 }
 
+.icone:hover {
+    opacity: 50%;
+}
 
 /** 
   *
