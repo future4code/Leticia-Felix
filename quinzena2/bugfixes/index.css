@@ -118,6 +118,13 @@ td button {
     color: black;
 }
 
+td button:hover {
+    background-color: #e6af2e;
+}
+td button:visited {
+    color:white;
+}
+
 tbody img{
     width: 35px;
 }
