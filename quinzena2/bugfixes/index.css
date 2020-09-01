@@ -38,7 +38,7 @@ div>p:first-child {
 }
 
 #desc {
-    width: 180px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,7 +61,7 @@ div img {
 }
 
 .container {
-    height: 500px;
+    height: 380px;
     text-align: center;
 }
 
@@ -158,4 +158,9 @@ tbody img{
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+#bk {
+    text-align: center;
+    padding-top: 80px;
 }
