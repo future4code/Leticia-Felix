@@ -6,6 +6,7 @@ import PaginaInscricaoViagem from '../pages/PaginaInscricaoViagem/PaginaInscrica
 import ListaDeViagens from '../pages/ListaDeViagens/ListaDeViagens';
 import CriarViagem from '../pages/CriarViagem/CriarViagem';
 import AprovarRejeitarViagens from '../pages/AprovarRejeitarViagens/AprovarRejeitarViagens';
+import Header from '../components/Header/Header'
 
   
     const Router = () => {
@@ -13,6 +14,7 @@ import AprovarRejeitarViagens from '../pages/AprovarRejeitarViagens/AprovarRejei
         return (
 
         <BrowserRouter>
+                <Header/>            
             <Switch>
 
                 <Route exact path="/">
