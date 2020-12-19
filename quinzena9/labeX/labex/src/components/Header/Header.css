@@ -7,3 +7,8 @@
 .barra {
     background-color: #20201D;
 }
+
+#barra {
+    display: flex;
+    flex-direction: row;
+}

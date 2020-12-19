@@ -15,7 +15,7 @@ const DivBase = styled.div`
     align-content: center;
     margin-left: auto;
 `
-const LoginDiv = styled.div`
+const LoginForm = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,6 @@ const ImgAstronauta = styled.img`
 const urlLogin = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/leticia-felix-tang/login";
 
 const Login = () => {
-    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
     const history = useHistory();
@@ -59,35 +58,31 @@ const Login = () => {
             email: email,
             password: password
         };
-
         axios
             .post(urlLogin, body)
             .then((response) => {
                 localStorage.setItem("token", response.data.token);
-                history.push('/trips/list');
+                history.push('/adm');
             })
             .catch((err) => {
                 console.log(err);
-            });
-        // inserir o axios de login aqui
-        
+            });    
     };
 
-    return (
-        
+    return (        
         <DivBase>
             <ImgAstronauta src={astronauta}/>
-            <LoginDiv>
+            <LoginForm>
                 <h2>Login</h2>
                 <label>Email</label>
-                <input value={email} onChange={onChangeEmail} size='35' required></input>
+                <input value={email} type="email" onChange={onChangeEmail} size='35' required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></input>
                 <label>Senha</label>
                 <input value={password} onChange={onChangePassword} type='password' size='35' required></input>
                     <ButtonDiv>
                         <Button onClick={login} size="small" variant="contained" color="secondary">Fazer login</Button>
                         <Button onClick={useBack('/')} size="small" variant="contained" color="secondary"> Voltar para home </Button>
                     </ButtonDiv>
-            </LoginDiv>
+            </LoginForm>
         </DivBase>
 )}
 

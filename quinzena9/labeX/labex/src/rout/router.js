@@ -5,8 +5,9 @@ import Login from '../pages/Login/Login';
 import PaginaInscricaoViagem from '../pages/PaginaInscricaoViagem/PaginaInscricaoViagem';
 import ListaDeViagens from '../pages/ListaDeViagens/ListaDeViagens';
 import CriarViagem from '../pages/CriarViagem/CriarViagem';
-import AprovarRejeitarViagens from '../pages/AprovarRejeitarViagens/AprovarRejeitarViagens';
-import Header from '../components/Header/Header'
+import DetalhesViagem from '../pages/DetalhesViagem/DetalhesViagem';
+import Header from '../components/Header/Header';
+import AreaAdm from '../pages/AreaAdm/AreaAdm'
 
   
     const Router = () => {
@@ -37,8 +38,12 @@ import Header from '../components/Header/Header'
                     <CriarViagem />
                 </Route>
 
-                <Route exact path="/trips/details">
-                    <AprovarRejeitarViagens />
+                <Route exact path="/trips/details/:tripId">
+                    <DetalhesViagem />
+                </Route>
+
+                <Route exact path="/adm">
+                    <AreaAdm />
                 </Route>
 
 

@@ -34,13 +34,12 @@ const ImgLogo = styled.img`
 const HomePage = () => {
 
     return( 
-        
         <HomeDiv>           
             <HomeImg src={galaxy} />
             <ImgLogo src={logog}/>
             <ButtonDiv>
                 <Button onClick={useBack('/application-form')} variant="contained" color="secondary">Inscreva-se em uma viagem</Button>
-                <Button onClick={useBack('/login')} variant="contained" color="secondary">Faça o seu login</Button>
+                <Button onClick={useBack('/login')} variant="contained" color="secondary">Painel Administrativo</Button>
             </ButtonDiv>
         </HomeDiv>
         )
