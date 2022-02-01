@@ -106,7 +106,7 @@ function retornaPessoaAnonimizada(pessoa) {
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-  let pessoasAutorizadas = pessoas.filter((item) => (item.idade >= 14 && item.idade <= 60) && item.altura >= 1.8).map((item) => {
+  let pessoasAutorizadas = pessoas.filter((item) => (item.idade > 14 && item.idade < 60) && item.altura >= 1.5).map((item) => {
     return item
   })
 
@@ -115,7 +115,11 @@ function retornaPessoasAutorizadas(pessoas) {
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+  let pessoasNaoAutorizadas = pessoas.filter((item) => item.idade <= 14 || item.idade >= 60 || item.altura <= 1.5).map((item) => {
+    return item
+  })
+
+  return pessoasNaoAutorizadas;
 }
 
 // EXERCÍCIO 14
