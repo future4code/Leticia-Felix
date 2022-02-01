@@ -46,8 +46,14 @@ console.log('Exercício 4:', retornaNumerosPares([1, 2, 3, 4, 5, 6]))
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  let numerosParesElevados = array.filter((item) => item % 2 === 0).map((item) => {
+    return item * item
+  })
+
+  return numerosParesElevados;
 }
+
+console.log('Exercício 5:', retornaNumerosParesElevadosADois([1, 2, 3, 4, 5, 6]))
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
