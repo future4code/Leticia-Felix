@@ -81,12 +81,17 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+  const nomeDoFilme = filme.nome;
+  const anoDoFilme = filme.ano;
+  const diretorDoFilme = filme.diretor;
+  const atoresDoFilme = filme.atores.join(', ');
+  
+   return `Venha assistir ao filme ${nomeDoFilme}, de ${anoDoFilme}, dirigido por ${diretorDoFilme} e estrelado por ${atoresDoFilme}.`
 }
 
 // EXERCÍCIO 12
