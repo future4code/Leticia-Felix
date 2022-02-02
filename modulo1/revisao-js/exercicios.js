@@ -124,12 +124,18 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-
 }
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
+  const arrayOrdenado = consultas.sort(function(x, y) {
+
+    let a = x.nome,
+        b = y.nome;
+    return a == b ? 0 : a > b ? 1 : -1;
+  })
   
+   return arrayOrdenado
 }
 
 // EXERCÍCIO 15B
