@@ -66,7 +66,15 @@ console.log('Exercício 6:', retornaMaiorNumero([1, 5, 3, 7, 5, 2]))
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-
+  let oMaiorNumero = 0
+    if (num1 > num2 === true) {
+      return oMaiorNumero = num1;
+  } else if (num2 > num1 === true) {
+      return oMaiorNumero = num2;
+  }
+//  maiorNumero: ,
+//  maiorDivisivelPorMenor: ,
+//  diferença: ,
 }
 
 // EXERCÍCIO 08
@@ -134,11 +142,18 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
         b = y.nome;
     return a == b ? 0 : a > b ? 1 : -1;
   })
-  
+
    return arrayOrdenado
 }
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
+   const arrayOrdenadoPorData = consultas.sort(function(x, y) {
+     let a = x.dataDaConsulta,
+         b = y.dataDaConsulta;
+     return a > b ;
+   }) 
+
+   return arrayOrdenadoPorData;
    
 }
