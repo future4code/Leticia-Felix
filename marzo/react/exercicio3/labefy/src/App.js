@@ -1,10 +1,10 @@
 import './App.css';
-import Playlist from './components/Playlists/Playlist';
+import Router from './router/Router';
 
 function App() {
   return (
     <div className="App">
-      <Playlist/>
+      <Router/>
     </div>
   );
 }
