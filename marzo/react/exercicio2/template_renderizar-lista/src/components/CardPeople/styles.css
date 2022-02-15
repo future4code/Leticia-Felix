@@ -1,0 +1,33 @@
+.card-bg {
+  width: 120%;
+  height: 230px;
+  background-color: grey;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+
+.card-bg h1 {
+  font-size: 20px;
+}
+
+.section-one {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: lightgrey;
+}
+
+.section-two {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.section-three {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: lightgrey;
+}
